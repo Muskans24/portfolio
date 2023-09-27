@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: #111;
+  }
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #DF6589FF 50% , #3C1053FF 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .container{
+    width: 100%;
+    height: 100vh;
+    background-color: #3C1053FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: #DF6589FF;
+} */
+.container .hero{
+    position: relative;
+    z-index: 10;
+    height: 85vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 3px solid #DF6589FF;
+    border-radius: 20px;
+    box-shadow: -15px 17px 17px rgba(10,10,10,0.15);
+    padding: 0 40px 0 80px;
+}
+.hero nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+.hero nav .logo{
+    color: #801f82;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+}
+.hero nav .nav-links a{
+    margin-left: 40px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.3s;
+    font-family: 'DM Serif Display', serif; 
+    font-size: 22px;
+}
+.hero nav .nav-links a:hover{
+    color: #DF6589FF;
+}
+
+.hero .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+.hero .content .div-text{
+    width: 65%;
+}
+
+.hero .content .div-text h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Tangerine', cursive;
+}
+.hero .content .div-text h4{
+    color: #801f82;
+    font-size: 30px;
+    margin-bottom: 10px; 
+ font-family: 'DM Serif Display', serif;   
+ /* font-family: 'Vollkorn SC', serif; */
+ 
+}
+.hero .content .div-text p{
+    color: #4f4f4f;
+    font-size: 19px;
+    margin-bottom: 40px; 
+    font-family: 'DM Serif Display', serif;   
+}
+.hero .content .div-text .btn{
+    padding: 15px 20px;
+    background-color: #801f82;
+    border: 2px solid #801f82;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px; 
+    
+}
+.hero .content .div-text .btn:hover{
+    color: #801f82;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.hero .content .div-img{
+    width: 50%; 
+    /* margin-left: 300px; */
+}
+.hero .content .div-img img{
+    width: 100%;
+    /* margin-left: 100px; */
+}
+
+
+/* animations*/
+
+.hero .logo,
+.hero .content .div-text h1,
+.hero .content .div-text h4,
+.hero .content .div-text .btn{
+    position: relative;
+    top: 50px;
+    animation: slide-top .5s linear forwards;
+    opacity: 0;
+}
+.hero .logo{
+    animation-delay: 0.2s;
+}
+.hero .content .div-text h1{
+    animation-delay: 0.5s;
+}
+.hero .content .div-text h4{
+    animation-delay: 0.9s;
+}
+.hero .content .div-text .btn{
+    animation-delay: 1.8s;
+}
+@keyframes slide-top{
+    0%{
+        top: 50px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+.hero .content .div-text p{
+    position: relative;
+    left: 100px;
+    animation: slide-right .5s linear forwards;
+    animation-delay: 1.3s;
+    opacity: 0;
+}
+@keyframes slide-right{
+    0%{
+        left: 100px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+.hero nav .nav-links {
+    position: relative;
+    left: 100px;
+    animation: slide-right .5s linear forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
+}
+@keyframes slide-right{
+    0%{
+        left: 100px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.hero .content .div-img img{
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fade-img .5s linear forwards;
+    animation-delay: 2.1s;
+}
+@keyframes fade-img{
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+       opacity: 1;
+       transform:scale(1);
+    }
+}
+

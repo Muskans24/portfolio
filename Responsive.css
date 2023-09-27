@@ -1,0 +1,48 @@
+/*----Mediaquery---*/
+/*--Home--*/
+@media screen and (max-width:768px) {
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+    .hero nav .logo{
+      font-size: 39px;
+    }
+    .hero nav .nav-links {
+      display: none;
+    }
+    .hero .content .div-text h1{
+      font-size: 29px;
+    }
+    .hero .content .div-text h4{
+        font-size: 20px;
+      }
+     .hero .content .div-text h4 span{
+        color: #fff;
+     }
+      .hero .content .div-text p{
+        font-size: 18px;
+      }
+      .hero .content .div-text .btn{
+        font-size: 18px;
+      }
+      .hero .content .div-img {
+        width: 60%;
+      }
+
+      /* .hero .content .div-img {
+        width: 150%;
+      } */
+  
+  }
+
+  /* --contact--
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+
+
+
+  /*-------About-----*/

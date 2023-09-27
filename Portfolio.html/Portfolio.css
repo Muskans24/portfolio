@@ -1,0 +1,117 @@
+*{
+ 
+    box-sizing: border-box;
+}
+ 
+body{
+  background-image: linear-gradient(to bottom, #3C1053FF 9%, #DF6589FF 25% , #3C1053FF 75%); 
+}
+
+.portfolio a{
+  position: fixed;
+  margin-left: 50px;
+  margin-top: 30px;
+  color: #DF6589FF;
+}
+
+.portfolio a:hover{
+  color: white;
+}
+  
+.portfolio .heading{
+  margin-bottom: 35px;
+  
+}
+
+.portfolio .heading{
+  position: relative;
+  padding-bottom: 22px;
+  margin-bottom: 38px;
+  font-weight: bolder;
+  font-size:60px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Reggae One', cursive; 
+}
+
+.portfolio .heading:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 4px;
+  background-color: #DF6589FF;
+    border-radius: 6px;
+}
+
+.portfolio .heading:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  transform: translateX(30px);
+  width: 130px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+ 
+.image{
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(17, 16, 16, 0.9);
+
+}
+
+.text_icons{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;  
+}
+
+.text_icons h2 {
+ color:#DF6589FF;
+ font-size: 45px;
+ font-family: 'Tangerine', cursive;
+}
+
+.text_icons a{
+  color:white;
+  padding: 10px;
+}
+.text_icons a:hover{
+  color: #DF6589FF;
+}
+
+
+
+
+
+
+
+
+.thumbnail{
+ transform: translateY(-4px);
+}
+
+.img-container:hover .overlay{
+  opacity: 1;
+}
+
