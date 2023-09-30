@@ -1,38 +1,97 @@
 /*----Mediaquery---*/
 /*--Home--*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:990px) {
     .container {
       width: 100%;
-      height: 100%;
+      height: 100vh;
     }
     .hero nav .logo{
-      font-size: 39px;
+      font-size: 50px;
     }
     .hero nav .nav-links {
       display: none;
     }
     .hero .content .div-text h1{
-      font-size: 29px;
+      font-size: 36px;
     }
     .hero .content .div-text h4{
-        font-size: 20px;
-      }
+        font-size: 29px;
+   }
      .hero .content .div-text h4 span{
         color: #fff;
-     }
+    }
       .hero .content .div-text p{
-        font-size: 18px;
-      }
+        font-size: 20px;
+    }
       .hero .content .div-text .btn{
-        font-size: 18px;
-      }
+        font-size: 20px;
+    }
       .hero .content .div-img {
-        width: 60%;
-      }
+        width: 90%;
+    }
+}  
 
-      /* .hero .content .div-img {
-        width: 150%;
-      } */
+
+    @media screen and (max-width:760px) {
+      .container {
+        width: 100%;
+        height: 100vh;
+      }
+      .hero nav .logo{
+        font-size: 50px;
+      }
+      .hero nav .nav-links {
+        display: none;
+      }
+      .hero .content .div-text h1{
+        font-size: 36px;
+      }
+      .hero .content .div-text h4{
+          font-size: 29px;
+        }
+       .hero .content .div-text h4 span{
+          color: #fff;
+       }
+        .hero .content .div-text p{
+          font-size: 20px;
+        }
+        .hero .content .div-text .btn{
+          font-size: 20px;
+        }
+        .hero .content .div-img {
+          width: 90%;
+        }
+   }   
+
+        @media screen and (max-width:530px) {
+          .container {
+            width: 100%;
+            height: 100vh;
+          }
+          .hero nav .logo{
+            font-size: 50px;
+          }
+          .hero nav .nav-links {
+            display: none;
+          }
+          .hero .content .div-text h1{
+            font-size: 36px;
+          }
+          .hero .content .div-text h4{
+              font-size: 29px;
+          }
+           .hero .content .div-text h4 span{
+              color: #fff;
+          }
+            .hero .content .div-text p{
+              font-size: 20px;
+          }
+            .hero .content .div-text .btn{
+              font-size: 20px;
+          }
+            .hero .content .div-img {
+              width: 100%;
+         }
   
   }
 
