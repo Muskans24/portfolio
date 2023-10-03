@@ -54,6 +54,8 @@
     box-shadow: -15px 17px 17px rgba(10,10,10,0.15);
     padding: 0 40px 0 80px;
 }
+
+
 .hero nav{
     display: flex;
     justify-content: space-between;
