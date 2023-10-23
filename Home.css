@@ -105,6 +105,25 @@
  /* font-family: 'Vollkorn SC', serif; */
 }
 
+
+
+
+.animation {
+  font: bold 210% 'Croissant One', cursive;
+  border-right: .1em solid white;
+  color: #c90f5d;
+  text-shadow: 0 0 5px white,
+  0 0 5px white,
+  0 0 5px white,
+  0 0 5px white;
+  margin-top: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(22)infinite alternate,
+	           blink-caret .4s step-end infinite alternate;
+}
+
 .hero .content .div-text p{
     color: #4f4f4f;
     font-size: 19px;
